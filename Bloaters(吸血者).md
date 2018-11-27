@@ -5,7 +5,7 @@
     通常这种情况不会立马产生，是经过时间的积累项目的发展，尤其是开发者没有努力的想要去改变根除它。
 ```
 
-**Long Method **
+**1、Long Method **
 
 症状：
 
@@ -89,8 +89,57 @@
      找到代码片段里的所有被使用的变量，它们仅仅声明在代码片段里，没有在外部被使用，简单点做法是移到新方法里，它们会变成这
   个新方法的内部变量。
      3、如果这个变量声明在你要提取的方法之前。你需要把这个变量作为参数传递给你的新方法，为了使用先前就包含在里面的值。通过使用
-   replace temp with query，有时候很轻松的就可以摆脱这些变量。
-   
+   Replace Temp with Query，有时候很轻松的就可以摆脱这些变量。
+  ```
+
+  ##### 2、Replace Temp with Query
+
+  **problem**
+
+      ```
+  将表达式的结果放在本地变量中以便稍后再代码中使用
+      ```
+
+  ```java
+  double calculateTotal() {
+    double basePrice = quantity * itemPrice;
+    if (basePrice > 1000) {
+      return basePrice * 0.95;
+    }
+    else {
+      return basePrice * 0.98;
+    }
+  }
+  ```
+
+  **Solution**
+
+  ```
+  移动整个表达式到一个单独的方法里，这个方法返回表达式的结果
+  用查询方法的方式去替代这个变量，如果需要合并这个新的方法在
+  其他方法里。
+  ```
+
+  ```java
+  double calculateTotal() {
+    if (basePrice() > 1000) {
+      return basePrice() * 0.95;
+    }
+    else {
+      return basePrice() * 0.98;
+    }
+  }
+  double basePrice() {
+    return quantity * itemPrice;
+  }
+  ```
+
+  **为什么要重构**
+
+  ```
+  这种重构可以为上面的Extract Method打下基础。
+  同样的表达式有时候也会被发现在其它方法中使用，这也是考虑新建
+  一个通用的方法的原因。
   ```
 
   
