@@ -5,7 +5,19 @@
     通常这种情况不会立马产生，是经过时间的积累项目的发展，尤其是开发者没有努力的想要去改变根除它。
 ```
 
-**1、Long Method **
+* ##### Long Method
+
+* ##### Large Class
+
+* ##### Primitive Obsession
+
+* ##### Long Parameter List
+
+* ##### Data Clumps
+
+  
+
+**1、Long Method**
 
 症状：
 
@@ -92,13 +104,39 @@
    Replace Temp with Query，有时候很轻松的就可以摆脱这些变量。
   ```
 
-  ##### 2、Replace Temp with Query
+  **2、Large Method**
+
+   **症状**
+
+  ```
+  一个类包含了太多的代码块/方法/代码行
+  ```
+
+  **问题原因**
+
+  ```
+  类通常一开始很小。但是随着时间积累和程序的增长会越来越膨胀
+  臃肿。
+  长的方法通常也是这样，程序员通常会觉得在一个存在的类里写一个新
+  特性比新建一个类再新写一个特性容易
+  ```
+
+  **治疗**
+
+  ```
+  
+  ```
+
+  
+
+  
+
+  ##### 3、Replace Temp with Query
 
   **problem**
 
-      ```
-  将表达式的结果放在本地变量中以便稍后再代码中使用
-      ```
+      将表达式的结果放在本地变量中以便稍后再代码中使用
+  
 
   ```java
   double calculateTotal() {
