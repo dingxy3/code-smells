@@ -181,6 +181,21 @@
 
   ##### 治疗
 
+  ```
+  如果你有一个巨大的各种各样的私有字段，你可能需要把那些符合相同
+  的一组数据封装到他们自己的类里，更好的做法是，把与这些数据相关联
+  的行为习惯也移动到这个类里，对于这个任务，Replace Data Value 
+  with Object.
+  
+  如果这个私有的字段的值被用在方法的参数里，使用 Introduce 
+  Parameter Object 或者 Preserve Whole Object
+  
+  当复杂的数据被用作变量编码的时候，使用Replace Type Code with
+  Class, Replace Type Code with Subclasses 或者 Replace Type 
+  Code with State/Strategy
+  如果变量中有数组，使用Replace Array with Object.
+  ```
+
   
 
   ##### 报酬
