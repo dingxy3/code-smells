@@ -42,7 +42,7 @@
 如果这个方法有一个清晰的名字，没有人为了知道这个方法干了什么会去查看这个代码内部的具体实现。
 减少一个方法体的长度，使用 提取方法  
 ```
-[Extract Method](../Extract Method.md)
+[Extract Method](./Extract Method.md)
 
 
 
