@@ -42,9 +42,8 @@
 如果这个方法有一个清晰的名字，没有人为了知道这个方法干了什么会去查看这个代码内部的具体实现。
 减少一个方法体的长度，使用 提取方法  
 ```
-[Extract Method](./Extract Method.md)
 
-
+[Extract Method.md](./Extract Method.md)
 
 ##### 为什么重构
 
@@ -73,7 +72,7 @@
    3、如果这个变量声明在你要提取的方法之前。你需要把这个变量作为参数传递给你的新方法，为了使用先前就包含在里面的值。通过使用
 ```
 
-[Replace Temp with Query](./Replace Temp with Query.md)```有时候很轻松的就可以摆脱这些变量。```
+[Replace Temp with Query](./Replace-Temp-with-Query.md)```有时候很轻松的就可以摆脱这些变量。```
 
 **2、Large Method**
 
