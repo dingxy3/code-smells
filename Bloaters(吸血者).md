@@ -43,7 +43,7 @@
 减少一个方法体的长度，使用 提取方法  
 ```
 
-[Extract Method](/Extract Method.md)
+[Extract Method](./Extract Method.md)
 
 
 
