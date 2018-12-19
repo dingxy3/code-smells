@@ -96,8 +96,7 @@
 
 ```
 当一个类穿戴了太多的功能性帽子，考虑一下把他们分开。
-Extract Class 帮助那些巨大的类某些行为能被剥离出来形成单独的
-组件。
+
 Extract Subclass帮助那些巨大的类某些行为能被用于不同的方式
 实现或者很少使用。
 Extract Interface帮助那些有必要有一个操作和行为清单，这客户
@@ -107,6 +106,9 @@ Extract Interface帮助那些有必要有一个操作和行为清单，这客户
 保持数据的一致性。 Duplicate Observed Data提供了一种处理
 方式。
 ```
+
+[Extract Class](./Extract-Class.md) ``` 帮助那些巨大的类某些行为能被剥离出来形成单独的组件。```
+
 
 ##### Payoff
 
