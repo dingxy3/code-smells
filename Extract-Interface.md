@@ -52,3 +52,11 @@ getDepartment()
 
 
 
+###### 最好要知道的
+
+```有一定相似的地方在```在[Extract SuperClass](./Extract-SuperClass.md)和[Extract Interface](./Extract-Interface.md)之间
+
+```提取接口只允许隔离通用接口，而不是通用代码，换句话说，如果一个类包含```[重复代码](./Deplicate-code.md)
+
+```提取接口的方式不会帮助你消除重复代码```
+
